@@ -5,18 +5,6 @@ AOS.init({
     offset: 100
 });
 
-function downloadResume() {
-    const link = document.createElement('a');
-    link.href = 'https://raw.githubusercontent.com/shivani-s0987/shivani-s0987/main/assets/resume/resume.pdf';
-    link.download = 'resume.pdf';
-
-    // For demo purposes, show an alert
-    //alert('Resume download feature: Please add your actual resume PDF to enable downloads. For now, please contact me directly at shivani2kk4@gmail.com');
-  
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
 
 // Typewriter Effect
 const texts = [
@@ -170,21 +158,34 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     }
 });
 function downloadResume() {
-            // Create a placeholder PDF download
-            const link = document.createElement('a');
-            link.href = 'data:application/pdf;base64,'; // Add your actual resume PDF base64 here
-            link.download = 'Shivani_Resume_Cybersecurity_Python_Developer.pdf';
-            
-            // For demo purposes, show an alert
-            alert('Resume download feature: Please add your actual resume PDF to enable downloads. For now, please contact me directly at shivani2kk4@gmail.com');
-            
-            // Uncomment the line below when you have your actual resume
-            // document.body.appendChild(link);
-            // link.click();
-            // document.body.removeChild(link);
-        }
+    const link = document.createElement('a');
+    link.href = 'https://raw.githubusercontent.com/shivani-s0987/shivani-s098/main/assets/resume/resume.pdf'; // Corrected RAW GitHub URL
+    link.download = 'resume.pdf';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+        
 // Add animation keyframes for success message
 const style = document.createElement('style');
+style.textContent = `
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+
+// Add custom CSS for slide-in animation
 style.textContent = `
     @keyframes slideInRight {
         from {
@@ -211,6 +212,25 @@ document.getElementById('email').addEventListener('blur', function () {
         this.style.borderColor = 'rgba(255, 255, 255, 0.2)';
         this.style.boxShadow = 'none';
     }
+});
+
+// Project Filtering Logic
+document.querySelectorAll('.filter-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.getAttribute('data-filter');
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    document.querySelectorAll('.project-card').forEach(item => {
+      if (filter === 'all' || item.classList.contains(filter)) {
+        item.style.display = 'block';
+        item.classList.add('aos-animate');
+      } else {
+        item.style.display = 'none';
+        item.classList.remove('aos-animate');
+      }
+    });
+  });
 });
 
 // Add loading animation

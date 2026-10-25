@@ -1,453 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivani - Cybersecurity Enthusiast | Python Django Developer</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Shivani - Cybersecurity Enthusiast and Python Django Developer from Bangalore. Skilled in ethical hacking, threat intelligence, and secure web development.">
-    <meta name="keywords" content="cybersecurity, python, django, ethical hacking, threat intelligence, web development, bangalore">
-    <meta name="author" content="Shivani">
-    
-    <!-- OpenGraph Meta Tags -->
-    <meta property="og:title" content="Shivani - Cybersecurity Enthusiast | Python Django Developer">
-    <meta property="og:description" content="Professional portfolio showcasing cybersecurity expertise and Python Django development skills">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://shivani-portfolio.github.io">
-    
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Shivani - Cybersecurity Enthusiast | Python Django Developer">
-    <meta name="twitter:description" content="Professional portfolio showcasing cybersecurity expertise and Python Django development skills">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔒</text></svg>">
-    
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- AOS Animation Library -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070b08">
+  <meta name="description" content="Shivani — Python Full-Stack Developer and Data Analyst. Building useful web applications and turning data into actionable insights.">
+  <meta name="keywords" content="Shivani, Python Developer, Django Developer, Full Stack Developer, Data Analyst, SQL, Pandas, Bengaluru">
+  <meta name="author" content="Shivani">
+  <meta property="og:title" content="Shivani | Python Developer & Data Analyst">
+  <meta property="og:description" content="Python-powered products. Clean data. Practical solutions.">
+  <meta property="og:type" content="website">
+  <title>Shivani | Python Developer & Data Analyst</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%2300ff78'/%3E%3Ctext x='50' y='66' font-size='48' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%23070b08'%3Ear.%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="animated-bg"></div>
-    
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">(★‿★)</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Certifications">Certificates</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
+  <canvas class="matrix-bg" aria-hidden="true"></canvas>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="cursor-aura" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Shivani home"><span class="brand-icon">s<span>.</span></span><span class="brand-name">SHIVANI<span class="brand-slash">/</span>DEV</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <div class="nav-links">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#expertise">Skills</a>
+        <a class="nav-link" href="#portfolio">Projects</a>
+        <a class="nav-link" href="#experience">Journey</a>
+        <a class="nav-link" href="#certifications">Certificates</a>
+        <a class="nav-contact" href="#contact">Contact <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
     </nav>
-    
-    <!-- Hero Section -->
-    <main class="main">
-        <section id="home" class="hero-section">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="home-content">
-                            <h3 data-aos="fade-right" data-aos-delay="200" style="font-size: 2.5rem; font-weight: 500; margin-bottom: 10px;">
-                                <strong>Hello, I'm</strong>
-                            </h3>
-                            <h1 data-aos="fade-up" data-aos-delay="400" class="hero-title">
-                                <strong>S H I V A N I</strong>
-                            </h1>
-                            <h3 data-aos="fade-left" data-aos-delay="600" class="hero-subtitle" style="position: relative;">
-                                And I'm a 
-                                <span class="multiple-text typed-text" style="display: inline;"></span>
-                                <span class="typed-cursor" style="color: #ff0040; font-weight: bold;">|</span>
-                            </h3>
-                            <p data-aos="zoom-in" data-aos-delay="800" style="font-size: 1rem; margin-bottom: 30px; line-height: 1.7; color: #ccc;">
-                                In the digital fortress where code meets cybersecurity,<br>
-                                I'm a cyber guardian — protecting, analyzing, developing.<br>
-                                From threat detection to secure development, every line I write fortifies digital defense.
-                            </p>
-                            <div class="social-media" data-aos="fade-up" data-aos-delay="1000">
-                                <a href="https://linkedin.com/in/shivani-s0987" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://github.com/shivani-s0987" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="mailto:shivani2kk4@gmail.com"><i class="fas fa-envelope"></i></a>
-                                <a href="https://instagram.com/shivani-s0987"><i class="fas fa-instagram" aria-hidden="true"></i></a>
-                            <br>
-                                <button class="btn btn-primary-custom" onclick="downloadResume()">
-                                    <b class="fas fa-download" style="color: #ccc;"> R e s u m e </b>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="hero-img" data-aos="fade-left" data-aos-delay="600">
-                            <img src="assets/img/profile.jpg" alt="Shivani - Cybersecurity Professional">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">About Me</h2>
-                <div class="row align-items-center">
-                    <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
-                        <div class="text-center">
-                            <img src="assets/img/about.jpg" alt="Shivani Profile" class="profile-img">
-                        </div>
-                    </div>
-                    <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
-                        <div class="about-card">
-                            <h3 class="mb-4" style="color: var(--primary-color);">Cybersecurity Enthusiast | Python Django Developer</h3>
-                            <p class="mb-4">
-                                Computer Science Engineering undergraduate (Batch 2026) with a strong passion for cybersecurity, Python development, and ethical hacking. Based in Bangalore, India, I bring a unique blend of technical expertise and security-first mindset to every project.
-                            </p>
-                            <p class="mb-4">
-                                Proficient in secure coding practices, web application security, and Django development. I have hands-on experience with industry-standard tools like VirusTotal, Shodan, Burp Suite, and Metasploit, enabling me to identify vulnerabilities and implement robust security solutions.
-                            </p>
-                            <p class="mb-0">
-                                <strong>Seeking opportunities in Network Security and Python Full Stack Development where I can leverage my skills to build secure, scalable applications and contribute to organizational cybersecurity initiatives.</strong>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
-                <div class="skills-grid">                    
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                        <h4><i class="fas fa-code"></i> Programming Languages</h4>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
-                        <h4><i class="fas fa-tools"></i> Tools & Frameworks</h4><br>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Django</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-bootstrap"></i>
-                            <span>Bootstrap</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
-                        <h4><i class="fas fa-shield-alt"></i> Security & Pentesting</h4>
-                        <div class="skill-item">
-                            <i class="fas fa-network-wired"></i>
-                            <span>Nmap</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-bug"></i>
-                            <span>Burp Suite</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-eye"></i>
-                            <span>Wireshark</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-skull-crossbones"></i>
-                            <span>Metasploit</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-                <!-- Filter Buttons -->
-                <ul class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
-                    <li class="filter-btn active" data-filter="all">All</li>
-                    <li class="filter-btn" data-filter="cyber">Cybersecurity</li>
-                    <li class="filter-btn" data-filter="django">PYTHON-DJANGO</li>
-                </ul>
-                <div class="projects-grid">
-                    <div class="project-card django" data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/img/projects/lms.jpeg" class="project-bg" alt="BookLytic Background" />
-                        <div class="project-header">
-                            <i class="fas fa-book project-icon"></i>
-                            <h3 class="project-title">BookLytic</h3>
-                        </div>
-                        <p class="mb-3">Book Tracking & Analytics Platform</p>
-                        <ul class="mb-4">
-                            <li>Full-stack Django application with secure user authentication</li>
-                            <li>Advanced analytics dashboard for reading patterns and preferences</li>
-                            <li>Implemented robust security measures and data encryption</li>
-                            <li>Responsive design with interactive data visualizations</li>
-                        </ul>
-                        <a href="https://github.com/shivani-s0987/Book-Vault" class="project-btn" target="_blank">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
+  </header>
 
-                    <div class="project-card django" data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/img/projects/online.jpeg" class="project-bg" alt="BookLytic Background" />
-                        <div class="project-header">
-                            <i class="fas fa-book project-icon"></i>
-                            <h3 class="project-title">EduVerse</h3>
-                        </div>
-                        <p class="mb-3">online education platform system</p>
-                        <ul class="mb-4">
-                            <li>Personalized dashboards for students & instructors</li>
-                            <li>Real-time attendance tracking and grading system</li>
-                            <li>AI-enhanced performance tracking & recommendations</li>
-                            <li>Admin portal with platform-wide oversight</li>
-                            <li>Secure user authentication and data encryption</li><br>
-                        </ul><br>
-                        <a href="https://github.com/shivani-s0987/EduVerse" class="project-btn" target="_blank">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                    
-                    <div class="project-card cyber django" data-aos="fade-up" data-aos-delay="400">
-                        <img src="assets/img/projects/pass.jpeg" class="project-bg" alt="BookLytic Background" />
-                        <div class="project-header">
-                            <i class="fas fa-key project-icon"></i>
-                            <h3 class="project-title">PassForge</h3>
-                        </div>
-                        <p class="mb-3">Secure Password Generator & Analyzer</p>
-                        <ul class="mb-4">
-                            <li>Python-based tool with OWASP-compliant strength assessment</li>
-                            <li>Advanced entropy calculation and security scoring</li>
-                            <li>Clean Django web interface with real-time feedback</li>
-                            <li>Export functionality for password management systems</li>
-                            <li>Comprehensive security auditing features</li>
-                        </ul><br>
-                        <a href="https://github.com/shivani-s0987/Pass-Forge" class="project-btn" target="_blank">
-                            <i class="fab fa-github"></i> View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <!-- Certifications Section -->
-        <section id="Certifications" class="section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Certifications</h2>
-                <div class="row">
-                     <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200">
-                        <div class="cert-card">
-                            <img src="assets/img/certificates/google cloud.png" alt="Google Cloud Cyber Security Certificate" class="cert-image">
-                            <div class="cert-overlay">
-                                <div class="cert-content">
-                                    <h4>Google Cloud Cyber Security Certificate</h4>
-                                    <p class="text-muted">Google</p>
-                                    <p><strong>July 2025</strong></p>
-                                    <p>Advanced Cloud Security Certificate covering DevSecOps and other cloud security operations.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="cert-card">
-                            <img src="assets/img/certificates/cec.jpg" alt="Ethical Hacking Certificate" class="cert-image">
-                            <div class="cert-overlay">
-                                <div class="cert-content">
-                                    <h4>Programming in Python</h4>
-                                    <p class="text-muted">CEC</p>
-                                    <p><strong>July 2025</strong></p>
-                                    <p>Advanced Python programming certification focusing on web development, data structures, and application security.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="cert-card">
-                            <img src="assets/img/certificates/deloitte.jpg" alt="Ethical Hacking Certificate" class="cert-image">
-                            <div class="cert-overlay">
-                                <div class="cert-content">
-                                    <h4>Deloitte -Cyber Job Simulation</h4>
-                                    <p class="text-muted">Forage</p>
-                                    <p><strong>June 2025</strong></p>
-                                    <p>Completed a hands-on Deloitte Cybersecurity job simulation focused on threat detection, incident response, and professional SOC workflows.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="cert-card">
-                            <img src="assets/img/certificates/udemy.jpg" alt="Ethical Hacking Certificate" class="cert-image">
-                            <div class="cert-overlay">
-                                <div class="cert-content">
-                                    <h4>Udemy</h4>
-                                    <p class="text-muted">UDEMY</p>
-                                    <p><strong>Feb 2025</strong></p>
-                                    <p>Gained practical expertise in full-stack web development using Python and Django, covering front-end, back-end, and deployment..</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                        <div class="cert-card">
-                            <img src="assets/img/certificates/nptel.jpeg" alt="Ethical Hacking Certificate" class="cert-image">
-                            <div class="cert-overlay">
-                                <div class="cert-content">
-                                    <h4>Ethical Hacking Certification</h4>
-                                    <p class="text-muted">NPTEL</p>
-                                    <p><strong>August 2024</strong></p>
-                                    <p>Comprehensive certification covering penetration testing, vulnerability assessment, and ethical hacking methodologies.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Professional Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
-                        <div class="timeline-content">
-                            <h3 style="color: var(--primary-color);">Python Development & CyberSecurity Intern</h3>
-                            <h4>ShadowFox</h4>
-                            <p class="--text-light">July 2025 – August 2025</p>
-                            <ul>
-                                <li>Engaged in real-world backend development and security implementation projects</li>
-                                <li>Participated in cybersecurity workshops and implemented secure data handling practices</li>
-                                <li>Conducted vulnerability assessments and implemented safe coding methodologies</li>
-                                <li>Collaborated with development teams to enhance application security posture</li>
-                                <li>Contributed to open-source security tools and documentation</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
-                <div class="row">
-                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-                        <div class="contact-info">
-                            <h3 class="mb-4" style="color: var(--primary-color);">Let's Connect</h3>
-                            <p class="mb-4">I'm always open to discussing cybersecurity opportunities, Django development projects, or collaborating on innovative security solutions.</p>
-                            
-                            <div class="contact-item mb-3">
-                                <i class="fas fa-map-marker-alt me-3" style="color: var(--secondary-color);"></i>
-                                <span>Bangalore, India</span>
-                            </div>
-                            
-                            <div class="d-flex align-items-center gap-4">
-                                <a href="mailto:shivani2kk4@gmail.com" class="fas fa-envelope" style="color: var(--secondary-color); font-size: 1.5rem;"></a>
-                                <a href="https://linkedin.com/in/shivani-s0987" target="_blank" class="fab fa-linkedin" style="color: var(--secondary-color); font-size: 1.5rem;"></a>
-                                <a href="https://instagram.com/in/shivani-s0987" target="_blank" class="fab fa-instagram" style="color: var(--secondary-color); font-size: 1.5rem;"></a>
-                                <a href="https://github.com/shivani-s0987" target="_blank" class="fab fa-github" style="color: var(--secondary-color); font-size: 1.5rem;"></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
-                        <form class="contact-form" id="contactForm">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="your.email@example.com" required>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." required></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary">
-                                <i class="fas fa-paper-plane me-2"></i>Send Message
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">          
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>&copy; 2025 Shivani's Portfolio. All rights reserved. |</p>
-                </div>
-            </div>
+  <main>
+    <section class="hero-section" id="home">
+      <div class="hero-scanline"></div><div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <div class="hero-overline"><span class="pulse-dot"></span> AVAILABLE FOR ENTRY-LEVEL OPPORTUNITIES <span class="overline-sep">/</span> BENGALURU, INDIA</div>
+          <p class="hero-greeting" data-aos="fade-right">Hello, I’m</p>
+          <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">Shivani<span class="title-period">.</span></h1>
+          <h2 class="hero-role" data-aos="fade-up" data-aos-delay="200">I’m a <span class="typed-text" aria-live="polite">Python Full-Stack Developer</span><span class="typed-cursor">|</span></h2>
+          <p class="hero-description" data-aos="fade-up" data-aos-delay="300">I build <strong>web applications with Python and Django</strong> and use data to make products more useful. My focus is on dependable backends, practical analytics, and simple, thoughtful user experiences.</p>
+          <div class="hero-actions" data-aos="fade-up" data-aos-delay="400">
+            <a class="btn btn-primary" href="#portfolio"><span>Explore my projects</span><i class="fa-solid fa-arrow-right"></i></a>
+            <a class="btn btn-outline" href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-file-pdf"></i><span>View résumé</span></a>
+          </div>
+          <div class="social-links" data-aos="fade-up" data-aos-delay="500" aria-label="Social links">
+            <a href="https://github.com/shivani-s0987" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/shivani-s0987" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/shivani-s0987" aria-label="LeetCode" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i></a>
+            <a href="mailto:shivani2kk4@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+            <span class="social-caption">LET’S BUILD SOMETHING USEFUL</span>
+          </div>
         </div>
-    </footer>
-    
-    <!-- Back to Top Button -->
-    <div class="floating-btn" id="backToTop">
-        <i class="fas fa-chevron-up"></i>
-    </div>
-    
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- AOS Animation Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-    <!-- Custom JavaScript -->
-     <script src="assets/js/script.js"></script>
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="250">
+          <div class="visual-frame">
+            <div class="frame-corner corner-tl"></div><div class="frame-corner corner-tr"></div><div class="frame-corner corner-bl"></div><div class="frame-corner corner-br"></div>
+            <div class="visual-topline"><span><i class="fa-solid fa-circle"></i> PROFILE / 001</span><span>PY • SQL • WEB</span></div>
+            <div class="portrait-wrap"><div class="portrait-backdrop"></div><img src="assets/img/profile.jpg" alt="Portrait of Shivani" class="profile-image"><div class="portrait-overlay"></div><div class="portrait-label"><span class="label-bar"></span><span>SHIVANI</span></div></div>
+            <div class="visual-bottomline"><span>BUILD / ANALYSE / ITERATE</span><span class="visual-status"><i></i> FOCUSED ON IMPACT</span></div>
+          </div>
+          <div class="floating-code glass-card"><div class="code-card-head"><span class="window-dot dot-red"></span><span class="window-dot dot-yellow"></span><span class="window-dot dot-green"></span><span class="code-filename">insights.py</span></div><div class="code-snippet"><p><em>def</em> build_solution(data):</p><p class="indent">clean = <b>prepare</b>(data)</p><p class="indent">insights = <b>analyse</b>(clean)</p><p class="indent"><em>return</em> <mark>insights</mark></p></div><div class="code-card-foot"><i class="fa-solid fa-check"></i> DATA → DECISIONS</div></div>
+          <div class="floating-badge badge-left"><span class="badge-icon"><i class="fa-brands fa-python"></i></span><span><b>Python-first</b><small>Product-minded development</small></span></div>
+          <div class="floating-badge badge-bottom"><span class="badge-icon"><i class="fa-solid fa-chart-line"></i></span><span><b>Analytics mindset</b><small>From raw data to direction</small></span></div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>SCROLL TO DISCOVER</span><span class="scroll-indicator"><i></i></span><span>PYTHON FULL-STACK <b>×</b> DATA ANALYTICS</span></div>
+    </section>
 
+    <section class="signal-strip" aria-label="Core focus">
+      <div class="container signal-row"><span class="strip-label">CORE FOCUS</span><span><i class="fa-brands fa-python"></i> PYTHON</span><b>✳</b><span><i class="fa-solid fa-server"></i> BACKEND SYSTEMS</span><b>✳</b><span><i class="fa-solid fa-database"></i> SQL & DATA</span><b>✳</b><span><i class="fa-solid fa-chart-simple"></i> ANALYTICS</span></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><div><span class="section-index">ABOUT</span><h2>Curiosity, translated<br>into <span class="accent-text">working code.</span></h2></div><p class="section-intro">I enjoy the intersection where software solves a practical problem and data helps explain what happens next.</p></div>
+        <div class="about-grid">
+          <div class="about-stats" data-aos="fade-right">
+            <div class="about-mini-photo"><img src="assets/img/about.jpg" alt="Shivani profile" loading="lazy"><div class="photo-overlay"><span>BLR / IN</span><span>2026 GRADUATE</span></div></div>
+            <div class="stat-grid">
+              <div class="stat-box"><span class="stat-number">2026</span><span class="stat-label">GRADUATE</span></div>
+              <div class="stat-box"><span class="stat-number">Python</span><span class="stat-label">CORE LANGUAGE</span></div>
+              <div class="stat-box"><span class="stat-number">Django</span><span class="stat-label">WEB FRAMEWORK</span></div>
+              <div class="stat-box"><span class="stat-number">Analytics</span><span class="stat-label">PROJECT FOCUS</span></div>
+            </div>
+          </div>
+          <div class="about-content" data-aos="fade-left">
+            <span class="small-tag"><span></span> THE SHORT VERSION</span>
+            <h3>Developer mindset.<br><span>Analyst curiosity.</span></h3>
+            <p>I’m a Computer Science Engineering graduate from the 2026 batch, based in Bengaluru. I enjoy developing Python/Django applications, working with data, and presenting information through clear dashboards and visualisations.</p>
+            <p>My background includes Python development, which has strengthened my appreciation for secure coding, careful data handling, and reliable application behaviour. I’m now focused on full-stack development and analytics-oriented products.</p>
+            <div class="about-callout"><i class="fa-solid fa-quote-left"></i><p>My goal is straightforward: understand the problem, build a dependable solution, and make the result easier to use or act on.</p></div>
+            <div class="about-links"><a href="#portfolio">See Projects <i class="fa-solid fa-arrow-right"></i></a><a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer">Open resume <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section expertise-section" id="expertise">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><div><span class="section-index">EXPERTISE</span><h2>Built around the<br><span class="accent-text">whole workflow.</span></h2></div><p class="section-intro">From structuring data and building APIs to delivering an understandable interface, these are the areas I’m developing through hands-on projects.</p></div>
+        <div class="expertise-grid">
+          <article class="expertise-card" data-aos="fade-up"><div class="expertise-card-top"><span class="expertise-icon"><i class="fa-solid fa-code"></i></span><span class="expertise-number">01</span></div><h3>Python Development</h3><p>Readable application logic, automation, data handling, and maintainable code that solves a specific problem.</p><div class="skill-pills"><span>Python</span><span>OOP</span><span>APIs</span><span>Debugging</span></div><div class="card-scan"></div></article>
+          <article class="expertise-card" data-aos="fade-up" data-aos-delay="80"><div class="expertise-card-top"><span class="expertise-icon"><i class="fa-solid fa-layer-group"></i></span><span class="expertise-number">02</span></div><h3>Full-Stack Web</h3><p>End-to-end web application development, including routing, models, authentication, responsive UI, and integration.</p><div class="skill-pills"><span>Django</span><span>REST APIs</span><span>HTML/CSS</span><span>JavaScript</span></div><div class="card-scan"></div></article>
+          <article class="expertise-card" data-aos="fade-up" data-aos-delay="160"><div class="expertise-card-top"><span class="expertise-icon"><i class="fa-solid fa-chart-column"></i></span><span class="expertise-number">03</span></div><h3>Data Analysis</h3><p>Inspect, clean, transform, and explore datasets to find trends and communicate meaningful observations.</p><div class="skill-pills"><span>SQL</span><span>Pandas</span><span>NumPy</span><span>Excel</span></div><div class="card-scan"></div></article>
+          <article class="expertise-card" data-aos="fade-up" data-aos-delay="240"><div class="expertise-card-top"><span class="expertise-icon"><i class="fa-solid fa-chart-pie"></i></span><span class="expertise-number">04</span></div><h3>Dashboards & Reporting</h3><p>Present key metrics, comparisons, and findings using clear visual hierarchy and decision-oriented reporting.</p><div class="skill-pills"><span>KPIs</span><span>Visualisation</span><span>Plotly / Charts</span><span>Storytelling</span></div><div class="card-scan"></div></article>
+          <article class="expertise-card" data-aos="fade-up" data-aos-delay="320"><div class="expertise-card-top"><span class="expertise-icon"><i class="fa-solid fa-database"></i></span><span class="expertise-number">05</span></div><h3>Databases & APIs</h3><p>Design relational data structures and connect services through clear, consistent API contracts.</p><div class="skill-pills"><span>SQL</span><span>SQLite</span><span>PostgreSQL*</span><span>JSON</span></div><div class="card-scan"></div></article>
+          <article class="expertise-card" data-aos="fade-up" data-aos-delay="400"><div class="expertise-card-top"><span class="expertise-icon"><i class="fa-solid fa-gears"></i></span><span class="expertise-number">06</span></div><h3>Engineering Workflow</h3><p>Version-controlled development, documentation, testing fundamentals, and a security-conscious approach.</p><div class="skill-pills"><span>Git/GitHub</span><span>Linux</span><span>Testing</span><span>Documentation</span></div><div class="card-scan"></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><div><span class="section-index">PROJECTS</span><h2>Things I’ve <span class="accent-text">built.</span></h2></div><p class="section-intro">A visual tour of practical projects, led by the work that best connects full-stack development with data analysis.</p></div>
+        <div class="portfolio-filters" data-aos="fade-up" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All work <span>03</span></button><button class="filter-btn" data-filter="fullstack" aria-pressed="false">Python / Full-stack</button><button class="filter-btn" data-filter="analytics" aria-pressed="false">Analytics</button><button class="filter-btn" data-filter="security" aria-pressed="false">Security</button>
+        </div>
+        <div class="portfolio-grid">
+          <article class="portfolio-item project-booklytic fullstack analytics" data-aos="zoom-in">
+            <button class="project-open" data-project="booklytic" aria-label="Open BookLytic project details"><img src="assets/img/projects/lms.jpeg" alt="BookLytic book tracking and analytics project preview" loading="lazy"><span class="project-image-overlay"><span>VIEW CASE STUDY <i class="fa-solid fa-arrow-up-right-from-square"></i></span></span></button>
+            <div class="portfolio-info"><div class="project-category">PYTHON / DJANGO / ANALYTICS</div><h3>BookLytic</h3><p>A book-tracking and analytics platform focused on reading patterns, preferences, and interactive personal insights.</p><div class="project-tags"><span>Python</span><span>Django</span><span>Analytics</span><span>Visualisation</span></div><button class="project-text-link" data-project="booklytic">Explore project <i class="fa-solid fa-arrow-right"></i></button></div>
+          </article>
+          <article class="portfolio-item project-eduverse fullstack" data-aos="zoom-in" data-aos-delay="90">
+            <button class="project-open" data-project="eduverse" aria-label="Open EduVerse project details"><img src="assets/img/projects/online.jpeg" alt="EduVerse online learning platform preview" loading="lazy"><span class="project-image-overlay"><span>VIEW CASE STUDY <i class="fa-solid fa-arrow-up-right-from-square"></i></span></span></button>
+            <div class="portfolio-info"><div class="project-category">PYTHON / DJANGO / WEB APP</div><h3>EduVerse</h3><p>An online education platform concept with student and instructor dashboards, attendance, grading, and administrative workflows.</p><div class="project-tags"><span>Python</span><span>Django</span><span>Dashboards</span></div><button class="project-text-link" data-project="eduverse">Explore project <i class="fa-solid fa-arrow-right"></i></button></div>
+          </article>
+          <article class="portfolio-item project-passforge security fullstack" data-aos="zoom-in" data-aos-delay="180">
+            <button class="project-open" data-project="passforge" aria-label="Open PassForge project details"><img src="assets/img/projects/pass.jpeg" alt="PassForge password generator and analyzer preview" loading="lazy"><span class="project-image-overlay"><span>VIEW CASE STUDY <i class="fa-solid fa-arrow-up-right-from-square"></i></span></span></button>
+            <div class="portfolio-info"><div class="project-category">PYTHON / DJANGO / APPLICATION</div><h3>PassForge</h3><p>A password generator and strength-analysis application with scoring logic and immediate, understandable feedback.</p><div class="project-tags"><span>Python</span><span>Django</span><span>Application logic</span></div><button class="project-text-link" data-project="passforge">Explore project <i class="fa-solid fa-arrow-right"></i></button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><div><span class="section-index">JOURNEY</span><h2>Learn. Build.<br><span class="accent-text">Keep improving.</span></h2></div><p class="section-intro">Experience and education that shaped my practical approach to engineering.</p></div>
+        <div class="timeline">
+          <article class="timeline-entry" data-aos="fade-up"><div class="timeline-date">JUL 2025 — AUG 2025</div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-header"><h3>Python Development & Cybersecurity Intern</h3><span>INTERNSHIP</span></div><p class="timeline-org">ShadowFox</p><p>Worked on development and security-oriented tasks, including secure data handling, application security practices, and technical documentation.</p></div></article>
+          <article class="timeline-entry" data-aos="fade-up"><div class="timeline-date">2022 — 2026</div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-header"><h3>Computer Science Engineering</h3><span>EDUCATION</span></div><p class="timeline-org">Bangalore Technological Institute · Bengaluru</p><p>Graduating in 2026. Building foundations in software development, databases, application design, and problem-solving.</p></div></article>
+          <article class="timeline-entry" data-aos="fade-up"><div class="timeline-date">CONTINUOUS</div><div class="timeline-dot"></div><div class="timeline-content"><div class="timeline-header"><h3>Independent Projects & Technical Learning</h3><span>ONGOING</span></div><p class="timeline-org">Python · Django · Data Analytics</p><p>Developing practical projects, documenting work, and strengthening the skills needed to move from problem definition to a working, explainable result.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section certifications-section" id="certifications">
+      <div class="container">
+        <div class="section-heading" data-aos="fade-up"><div><span class="section-index">CERTIFICATIONS</span><h2>Learning with <span class="accent-text">evidence.</span></h2></div><p class="section-intro">A selection of learning records carried over from your existing portfolio assets. Click any certificate to view it larger.</p></div>
+        <div class="cert-grid">
+          <button class="cert-card" data-cert="assets/img/certificates/cec.jpg" data-title="Programming in Python" data-aos="zoom-in"><img src="assets/img/certificates/cec.jpg" alt="Programming in Python certificate" loading="lazy"><span class="cert-overlay"><b>Programming in Python</b><small>CEC · July 2025</small><i class="fa-solid fa-expand"></i></span></button>
+          <button class="cert-card" data-cert="assets/img/certificates/google%20cloud.png" data-title="Google Cloud Cyber Security Certificate" data-aos="zoom-in" data-aos-delay="70"><img src="assets/img/certificates/google%20cloud.png" alt="Google Cloud Cyber Security certificate" loading="lazy"><span class="cert-overlay"><b>Google Cloud Cyber Security</b><small>Google · July 2025</small><i class="fa-solid fa-expand"></i></span></button>
+          <button class="cert-card" data-cert="assets/img/certificates/deloitte.jpg" data-title="Deloitte Cyber Job Simulation" data-aos="zoom-in" data-aos-delay="140"><img src="assets/img/certificates/deloitte.jpg" alt="Deloitte Cyber Job Simulation certificate" loading="lazy"><span class="cert-overlay"><b>Deloitte Cyber Job Simulation</b><small>Forage · June 2025</small><i class="fa-solid fa-expand"></i></span></button>
+          <button class="cert-card" data-cert="assets/img/certificates/udemy.jpg" data-title="Full-Stack Development" data-aos="zoom-in" data-aos-delay="210"><img src="assets/img/certificates/udemy.jpg" alt="Full-stack development certificate" loading="lazy"><span class="cert-overlay"><b>Full-Stack Development</b><small>Udemy · Feb 2025</small><i class="fa-solid fa-expand"></i></span></button>
+          <button class="cert-card" data-cert="assets/img/certificates/nptel.jpeg" data-title="Ethical Hacking Certification" data-aos="zoom-in" data-aos-delay="280"><img src="assets/img/certificates/nptel.jpeg" alt="NPTEL ethical hacking certificate" loading="lazy"><span class="cert-overlay"><b>Ethical Hacking</b><small>NPTEL · August 2024</small><i class="fa-solid fa-expand"></i></span></button>
+        </div>
+        <p class="cert-caveat"><i class="fa-solid fa-circle-info"></i> Confirm the exact titles, issuers, and dates against each original certificate before publishing.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-matrix" aria-hidden="true"></div><div class="contact-ring ring-one"></div><div class="contact-ring ring-two"></div>
+      <div class="container contact-layout">
+        <div class="contact-copy" data-aos="fade-right"><span class="section-index">LET’S CONNECT</span><h2>Good work starts<br>with a <span>conversation.</span></h2><p>I’m looking for entry-level opportunities in Python full-stack development and data analytics. If your team values curiosity, solid fundamentals, and a willingness to learn, let’s connect.</p><a class="btn btn-primary btn-large" href="mailto:shivani2kk4@gmail.com?subject=Opportunity%20for%20Shivani"><span>Send me an email</span><i class="fa-regular fa-paper-plane"></i></a></div>
+        <div class="contact-card" data-aos="fade-left"><div class="contact-card-top"><span class="terminal-dot"></span><span>CONTACT.EXE</span><span class="contact-card-status">READY</span></div><div class="contact-line"><span>EMAIL</span><a href="mailto:shivani2kk4@gmail.com">shivani2kk4@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><div class="contact-line"><span>LOCATION</span><b>Bengaluru, India</b></div><div class="contact-line"><span>GITHUB</span><a href="https://github.com/shivani-s0987" target="_blank" rel="noopener noreferrer">@shivani-s0987 <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><div class="contact-line"><span>LINKEDIN</span><a href="https://linkedin.com/in/shivani-s0987" target="_blank" rel="noopener noreferrer">Connect professionally <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div><div class="contact-availability"><span class="pulse-dot"></span> OPEN TO RELEVANT OPPORTUNITIES</div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-icon">s<span>.</span></span><span class="brand-name">SHIVANI<span class="brand-slash">/</span>DEV</span></a><p>Built with curiosity. Driven by useful outcomes.</p><div class="footer-right"><span>© <span id="currentYear"></span> SHIVANI</span><a href="#top" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a></div></div></footer>
+
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true">
+    <div class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" aria-label="Close project details"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-eyebrow"><span class="pulse-dot"></span> PROJECT CASE STUDY <span class="modal-id">/ 001</span></div>
+      <div class="modal-layout"><div class="modal-image-wrap"><img id="modalImage" src="" alt=""><span class="modal-image-label">SELECTED WORK / SHIVANI</span></div><div class="modal-copy"><span class="modal-category" id="modalCategory"></span><h2 id="modalTitle"></h2><p id="modalDescription"></p><h3>What it explores</h3><ul id="modalFeatures"></ul><div class="modal-tech" id="modalTech"></div><a id="modalGithub" class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer"><span>View GitHub repository</span><i class="fa-brands fa-github"></i></a></div></div>
+    </div>
+  </div>
+  <div class="image-lightbox" id="certLightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Close certificate image"><i class="fa-solid fa-xmark"></i></button><div class="lightbox-content"><span id="lightboxTitle"></span><img id="lightboxImage" src="" alt=""></div></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
-                                        
-                    

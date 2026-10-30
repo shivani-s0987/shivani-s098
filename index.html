@@ -197,77 +197,371 @@
             </div>
         </section>
         
-        
         <!-- Projects Section -->
         <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-                <!-- Filter Buttons -->
+        
+                <h2 class="section-title" data-aos="fade-up">
+                    Featured Projects
+                </h2>
+        
+                <p class="section-subtitle" data-aos="fade-up">
+                    A selection of software development, data analytics,
+                    business intelligence, and AI-focused projects.
+                </p>
+        
+                <!-- Project Filters -->
                 <ul class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
-                    <li class="filter-btn active" data-filter="all">All</li>
-                    <li class="filter-btn" data-filter="cyber">Cybersecurity</li>
-                    <li class="filter-btn" data-filter="django">PYTHON-DJANGO</li>
+                    <li class="filter-btn active" data-filter="all">All Projects</li>
+                    <li class="filter-btn" data-filter="analytics">Data Analytics</li>
+                    <li class="filter-btn" data-filter="django">Python & Full Stack</li>
+                    <li class="filter-btn" data-filter="ai">AI & Business Intelligence</li>
                 </ul>
+        
                 <div class="projects-grid">
-                    <div class="project-card django" data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/img/projects/lms.jpeg" class="project-bg" alt="BookLytic Background" />
+        
+                    <!-- 1. Sales & Operations MIS Reporting System -->
+                    <div class="project-card analytics"
+                         data-aos="fade-up" data-aos-delay="100">
+        
+                        <img src="assets/img/projects/sales-mis.png"
+                             class="project-bg"
+                             alt="Sales and Operations MIS Reporting System dashboard"
+                             loading="lazy">
+        
                         <div class="project-header">
-                            <i class="fas fa-book project-icon"></i>
-                            <h3 class="project-title">BookLytic</h3>
+                            <i class="fas fa-chart-line project-icon"></i>
+                            <h3 class="project-title">
+                                Sales & Operations MIS Reporting System
+                            </h3>
                         </div>
-                        <p class="mb-3">Book Tracking & Analytics Platform</p>
+        
+                        <p class="mb-3">
+                            Automated MIS Reporting & Business Performance Analytics
+                        </p>
+        
                         <ul class="mb-4">
-                            <li>Full-stack Django application with secure user authentication</li>
-                            <li>Advanced analytics dashboard for reading patterns and preferences</li>
-                            <li>Implemented robust security measures and data encryption</li>
-                            <li>Responsive design with interactive data visualizations</li>
+                            <li>Developed an automated reporting pipeline to clean, validate, and analyze 19,000+ sales records.</li>
+                            <li>Analyzed performance across 120 products, 10 categories, and 6 regions.</li>
+                            <li>Automated daily and monthly Excel MIS reports covering sales KPIs, target achievement, and profitability.</li>
+                            <li>Generated regional performance, order fulfillment, delayed order, and inventory exception reports.</li>
                         </ul>
-                        <a href="https://github.com/shivani-s0987/Book-Vault" class="project-btn" target="_blank">
+        
+                        <p class="project-tech">
+                            <strong>Tech Stack:</strong>
+                            Python, SQL, Excel, Pandas, openpyxl
+                        </p>
+        
+                        <a href="#"
+                           class="project-btn"
+                           target="_blank"
+                           rel="noopener noreferrer">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
-
-                    <div class="project-card django" data-aos="fade-up" data-aos-delay="200">
-                        <img src="assets/img/projects/online.jpeg" class="project-bg" alt="BookLytic Background" />
+        
+        
+                    <!-- 2. Pricing Optimization Dashboard -->
+                    <div class="project-card analytics"
+                         data-aos="fade-up" data-aos-delay="150">
+        
+                        <img src="assets/img/projects/pricing-optimization.png"
+                             class="project-bg"
+                             alt="Pricing Optimization Dashboard"
+                             loading="lazy">
+        
+                        <div class="project-header">
+                            <i class="fas fa-tags project-icon"></i>
+                            <h3 class="project-title">
+                                Pricing Optimization Dashboard
+                            </h3>
+                        </div>
+        
+                        <p class="mb-3">
+                            Product Revenue, Discount Effectiveness & Profitability Intelligence
+                        </p>
+        
+                        <ul class="mb-4">
+                            <li>Built a retail pricing analytics solution using 20,000 synthetic transaction records.</li>
+                            <li>Analyzed 120 products, 10 categories, 5 regions, and 4 sales channels.</li>
+                            <li>Developed SQL analysis and Excel reporting for pricing and profitability metrics.</li>
+                            <li>Performed scenario-based analysis to evaluate discount effectiveness, margin trends, and pricing opportunities.</li>
+                        </ul>
+        
+                        <p class="project-tech">
+                            <strong>Tech Stack:</strong>
+                            Python, SQL, Excel, Power BI, Pandas
+                        </p>
+        
+                        <a href="#"
+                           class="project-btn"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+        
+        
+                    <!-- 3. Dynamic Pricing Analysis -->
+                    <div class="project-card analytics"
+                         data-aos="fade-up" data-aos-delay="200">
+        
+                        <img src="assets/img/projects/dynamic-pricing.png"
+                             class="project-bg"
+                             alt="Dynamic Pricing Analysis and Revenue Intelligence"
+                             loading="lazy">
+        
+                        <div class="project-header">
+                            <i class="fas fa-chart-area project-icon"></i>
+                            <h3 class="project-title">
+                                Dynamic Pricing Analysis & Revenue Intelligence
+                            </h3>
+                        </div>
+        
+                        <p class="mb-3">
+                            Pricing Trends, Competitor Benchmarking & Revenue Analytics
+                        </p>
+        
+                        <ul class="mb-4">
+                            <li>Developed a pricing analytics pipeline covering 180 products and 98,000+ price observations.</li>
+                            <li>Analyzed pricing trends, competitor benchmarks, demand patterns, and product profitability.</li>
+                            <li>Created SQL analytical queries and automated data visualizations.</li>
+                            <li>Developed pricing opportunity reports and scenario simulations to support pricing decisions.</li>
+                        </ul>
+        
+                        <p class="project-tech">
+                            <strong>Tech Stack:</strong>
+                            Python, SQL, Pandas, NumPy, Data Visualization
+                        </p>
+        
+                        <a href="#"
+                           class="project-btn"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+        
+        
+                    <!-- 4. InsightFlow BI -->
+                    <div class="project-card ai"
+                         data-aos="fade-up" data-aos-delay="250">
+        
+                        <img src="assets/img/projects/insightflow-bi.png"
+                             class="project-bg"
+                             alt="InsightFlow BI business intelligence platform"
+                             loading="lazy">
+        
+                        <div class="project-header">
+                            <i class="fas fa-chart-pie project-icon"></i>
+                            <h3 class="project-title">
+                                InsightFlow BI
+                            </h3>
+                        </div>
+        
+                        <p class="mb-3">
+                            Business Intelligence & Analytics Platform
+                        </p>
+        
+                        <ul class="mb-4">
+                            <li>Designed a full-stack BI platform for CSV and Excel data ingestion.</li>
+                            <li>Developed data cleaning and validation workflows.</li>
+                            <li>Implemented KPI tracking, data filtering, and interactive business dashboards.</li>
+                            <li>Designed downloadable reporting workflows for business analysis.</li>
+                        </ul>
+        
+                        <p class="project-tech">
+                            <strong>Tech Stack:</strong>
+                            Python, Django / FastAPI, React, SQL, Pandas, Plotly
+                        </p>
+        
+                        <a href="#"
+                           class="project-btn"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+        
+        
+                    <!-- 5. HealTech -->
+                    <div class="project-card django"
+                         data-aos="fade-up" data-aos-delay="300">
+        
+                        <img src="assets/img/projects/healtech.png"
+                             class="project-bg"
+                             alt="HealTech Smart Hospital Management System"
+                             loading="lazy">
+        
+                        <div class="project-header">
+                            <i class="fas fa-hospital project-icon"></i>
+                            <h3 class="project-title">
+                                HealTech
+                            </h3>
+                        </div>
+        
+                        <p class="mb-3">
+                            Smart Hospital Management System
+                        </p>
+        
+                        <ul class="mb-4">
+                            <li>Developed a database-driven hospital management application.</li>
+                            <li>Integrated patient, doctor, billing, pharmacy, and laboratory modules.</li>
+                            <li>Implemented role-based authentication and appointment management workflows.</li>
+                            <li>Built laboratory workflow automation and analytics dashboards for operational monitoring.</li>
+                        </ul>
+        
+                        <p class="project-tech">
+                            <strong>Tech Stack:</strong>
+                            Python, Django, JavaScript, PostgreSQL
+                        </p>
+        
+                        <a href="#"
+                           class="project-btn"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+        
+        
+                    <!-- 6. BookLytic - Existing Project -->
+                    <div class="project-card django"
+                         data-aos="fade-up" data-aos-delay="350">
+        
+                        <img src="assets/img/projects/lms.jpeg"
+                             class="project-bg"
+                             alt="BookLytic Book Tracking and Analytics Platform"
+                             loading="lazy">
+        
                         <div class="project-header">
                             <i class="fas fa-book project-icon"></i>
-                            <h3 class="project-title">EduVerse</h3>
+                            <h3 class="project-title">
+                                BookLytic
+                            </h3>
                         </div>
-                        <p class="mb-3">online education platform system</p>
+        
+                        <p class="mb-3">
+                            Book Tracking & Analytics Platform
+                        </p>
+        
                         <ul class="mb-4">
-                            <li>Personalized dashboards for students & instructors</li>
-                            <li>Real-time attendance tracking and grading system</li>
-                            <li>AI-enhanced performance tracking & recommendations</li>
-                            <li>Admin portal with platform-wide oversight</li>
-                            <li>Secure user authentication and data encryption</li><br>
-                        </ul><br>
-                        <a href="https://github.com/shivani-s0987/EduVerse" class="project-btn" target="_blank">
+                            <li>Full-stack Django application with user authentication.</li>
+                            <li>Analytics dashboard for reading patterns and preferences.</li>
+                            <li>Responsive interface with interactive data visualizations.</li>
+                            <li>Book tracking and management functionality.</li>
+                        </ul>
+        
+                        <p class="project-tech">
+                            <strong>Tech Stack:</strong>
+                            Python, Django, SQL, HTML, CSS, JavaScript
+                        </p>
+        
+                        <a href="https://github.com/shivani-s0987/Book-Vault"
+                           class="project-btn"
+                           target="_blank"
+                           rel="noopener noreferrer">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
-                    
-                    <div class="project-card cyber django" data-aos="fade-up" data-aos-delay="400">
-                        <img src="assets/img/projects/pass.jpeg" class="project-bg" alt="BookLytic Background" />
+        
+        
+                    <!-- 7. EduVerse - Existing Project -->
+                    <div class="project-card django"
+                         data-aos="fade-up" data-aos-delay="400">
+        
+                        <img src="assets/img/projects/online.jpeg"
+                             class="project-bg"
+                             alt="EduVerse Online Education Platform"
+                             loading="lazy">
+        
+                        <div class="project-header">
+                            <i class="fas fa-graduation-cap project-icon"></i>
+                            <h3 class="project-title">
+                                EduVerse
+                            </h3>
+                        </div>
+        
+                        <p class="mb-3">
+                            Online Education Platform
+                        </p>
+        
+                        <ul class="mb-4">
+                            <li>Developed personalized dashboards for students and instructors.</li>
+                            <li>Implemented attendance tracking and grading functionality.</li>
+                            <li>Built an admin portal for platform-wide oversight.</li>
+                            <li>Explored performance tracking and recommendation features.</li>
+                        </ul>
+        
+                        <p class="project-tech">
+                            <strong>Tech Stack:</strong>
+                            Python, Django, SQL, HTML, CSS, JavaScript
+                        </p>
+        
+                        <a href="https://github.com/shivani-s0987/EduVerse"
+                           class="project-btn"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+        
+        
+                    <!-- 8. PassForge - Existing Project -->
+                    <div class="project-card django"
+                         data-aos="fade-up" data-aos-delay="450">
+        
+                        <img src="assets/img/projects/pass.jpeg"
+                             class="project-bg"
+                             alt="PassForge Python Password Generator"
+                             loading="lazy">
+        
                         <div class="project-header">
                             <i class="fas fa-key project-icon"></i>
-                            <h3 class="project-title">PassForge</h3>
+                            <h3 class="project-title">
+                                PassForge
+                            </h3>
                         </div>
-                        <p class="mb-3">Secure Password Generator & Analyzer</p>
+        
+                        <p class="mb-3">
+                            Python Password Generator & Analyzer
+                        </p>
+        
                         <ul class="mb-4">
-                            <li>Python-based tool with OWASP-compliant strength assessment</li>
-                            <li>Advanced entropy calculation and security scoring</li>
-                            <li>Clean Django web interface with real-time feedback</li>
-                            <li>Export functionality for password management systems</li>
-                            <li>Comprehensive security auditing features</li>
-                        </ul><br>
-                        <a href="https://github.com/shivani-s0987/Pass-Forge" class="project-btn" target="_blank">
+                            <li>Developed a Python-based password generation application.</li>
+                            <li>Implemented password generation logic and user input handling.</li>
+                            <li>Explored password strength assessment and security scoring concepts.</li>
+                            <li>Created a web-based interface for interacting with the application.</li>
+                        </ul>
+        
+                        <p class="project-tech">
+                            <strong>Tech Stack:</strong>
+                            Python, Django, HTML, CSS, JavaScript
+                        </p>
+        
+                        <a href="https://github.com/shivani-s0987/Pass-Forge"
+                           class="project-btn"
+                           target="_blank"
+                           rel="noopener noreferrer">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div>
+        
                 </div>
+        
+                <!-- All Projects CTA -->
+                <div class="text-center mt-5" data-aos="fade-up">
+                    <a href="https://github.com/shivani-s0987?tab=repositories"
+                       class="project-btn"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
+                        Explore All GitHub Projects
+                    </a>
+                </div>
+        
             </div>
         </section>
-        
         
         <!-- Certifications Section -->
         <section id="Certifications" class="section">
